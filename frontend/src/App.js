@@ -19,14 +19,15 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        {this.state.todos.map(item => (
-          <div key={item.id}>
-            <h1>{item.title}</h1>
-            <span>{item.description}</span>
-          </div>
-        ))}
-      </div>
+      // <div>
+      //   {this.state.todos.map(item => (
+      //     <div key={item.id}>
+      //       <h1>{item.title}</h1>
+      //       <span>{item.description}</span>
+      //     </div>
+      //   ))}
+      // </div>
+      <h1>Donna's website under construction</h1>
     );
   }
 }
