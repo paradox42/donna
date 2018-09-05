@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import PagePreloader from './components/PagePreloader';
+import Header from './components/Header'
+import Hero from './components/Hero'
 
 class App extends Component {
   state = {
@@ -6,28 +9,24 @@ class App extends Component {
   };
 
   async componentDidMount() {
-    try {
-      const res = await fetch('http://127.0.0.1:8000/api/');
-      const todos = await res.json();
-      this.setState({
-        todos
-      });
-    } catch (e) {
-      console.log(e);
-    }
+    // try {
+    //   const res = await fetch('http://127.0.0.1:8000/api/');
+    //   const todos = await res.json();
+    //   this.setState({
+    //     todos
+    //   });
+    // } catch (e) {
+    //   console.log(e);
+    // }
   }
 
   render() {
     return (
-      // <div>
-      //   {this.state.todos.map(item => (
-      //     <div key={item.id}>
-      //       <h1>{item.title}</h1>
-      //       <span>{item.description}</span>
-      //     </div>
-      //   ))}
-      // </div>
-      <h1>Donna's website under construction</h1>
+      <div>
+        <PagePreloader></PagePreloader>
+        <Header></Header>
+        <Hero></Hero>
+      </div>
     );
   }
 }
