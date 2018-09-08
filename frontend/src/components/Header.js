@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Personal from './Personal';
 
 class Header extends Component {
     render() {
@@ -10,24 +11,17 @@ class Header extends Component {
                             <div className="col-lg-6 header-top-left">
                                 <div className="top-info">
                                     <i className="fa fa-phone"></i>
-                                    (+88) 666 121 4321
+                                    678-499-8846
 						        </div>
                                 <div className="top-info">
                                     <i className="fa fa-envelope"></i>
-                                    info.leramiz@colorlib.com
+                                    place holder for email
 						        </div>
                             </div>
                             <div className="col-lg-6 text-lg-right header-top-right">
-                                <div className="top-social">
-                                    <a href=""><i className="fa fa-facebook"></i></a>
-                                    <a href=""><i className="fa fa-twitter"></i></a>
-                                    <a href=""><i className="fa fa-instagram"></i></a>
-                                    <a href=""><i className="fa fa-pinterest"></i></a>
-                                    <a href=""><i className="fa fa-linkedin"></i></a>
-                                </div>
                                 <div className="user-panel">
-                                    <a href=""><i className="fa fa-user-circle-o"></i> Register</a>
-                                    <a href=""><i className="fa fa-sign-in"></i> Login</a>
+                                    <a href="http://139.59.169.103:8090/registerv2" target="_blank"><i className="fa fa-user-circle-o"></i> Become My Client</a>
+                                    <a href="http://139.59.169.103:8090/login" target="_blank"><i className="fa fa-sign-in"></i> Client Login</a>
                                 </div>
                             </div>
                         </div>
@@ -44,9 +38,6 @@ class Header extends Component {
                                 <ul className="main-menu">
                                     <li><a href="index.html">Home</a></li>
                                     <li><a href="categories.html">FEATURED LISTING</a></li>
-                                    <li><a href="about.html">ABOUT US</a></li>
-                                    <li><a href="single-list.html">Pages</a></li>
-                                    <li><a href="blog.html">Blog</a></li>
                                     <li><a href="contact.html">Contact</a></li>
                                 </ul>
                             </div>

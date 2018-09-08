@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 import PagePreloader from './components/PagePreloader';
-import Header from './components/Header'
-import Hero from './components/Hero'
+import Header from './components/Header';
+import Hero from './components/Hero';
+import FilterForm from './components/FilterForm';
+import Properties from './components/Properties';
+import Services from './components/Services';
+// import Personal from './components/Personal';
 
 class App extends Component {
   state = {
@@ -26,6 +30,9 @@ class App extends Component {
         <PagePreloader></PagePreloader>
         <Header></Header>
         <Hero></Hero>
+        <FilterForm></FilterForm>
+        <Properties></Properties>
+        <Services></Services>
       </div>
     );
   }
